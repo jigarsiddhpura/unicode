@@ -1,0 +1,119 @@
+body{
+    /* position: fixed; */
+    z-index: 1000 !important;
+}
+
+/* navigation bar */
+
+nav ul{
+    display: none;
+}
+
+/* home pg */
+
+.home{
+    height: 600px;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 100px 100px;
+}
+#name p, #intro span{
+    color: white;
+}
+
+#name{
+    background-color: var(--dblue);
+    font-size: 1.6rem;
+    padding-bottom: 10px;
+}
+
+#intro{
+    font-size: 1.1rem;
+    padding: 1px 50px 0px 44px;
+}
+
+#profile img{
+    position: relative;
+    top: -7%;
+    width: 353px;
+    height: 319px;
+    border: none;
+    box-shadow: none;
+}
+
+#profile{
+    background-color: var(--dblue);
+    padding: 20px 0pc 0px 26px;
+    /* border: 2px solid wheat;  */
+}
+
+/* skill section */
+
+.skillset{
+    top: 0px;
+}
+
+#skill-intro p{
+    font-size: 3.5rem;
+    padding-bottom: 4px;
+}
+
+.skill-grid-items span{
+    font-size: 1.1rem;
+} 
+
+#skill-intro span{
+    font-size: 1.2rem;
+}
+
+.skillset{
+    /* grid-template-rows: repeat(6,270px); */
+    grid-template-columns: repeat(1,1fr);
+}
+#skill-intro{
+    height: 10px;
+}
+
+/* PROJECT SECTION */
+
+.myprogs{
+    position: relative;
+    top: 50px;
+    padding: 20px;
+    grid-template-areas: 
+    'progintro'
+    'progred'
+    'progfood'
+    'proggym'
+    'progmore ';
+}
+
+#progintro span{
+    font-size: 2rem;
+    /* line-height: 10%; */
+}
+
+#progred p, #progfood p, #proggym p{
+    font-size: 1.2rem;
+}
+
+#progred h1, #progfood h1, #proggym h1{
+    font-size: 2rem;
+}
+
+
+/* contact page */
+
+.contact{
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 600px;
+    background-color: var(--dblue);
+    padding: 10px 30px;
+}
+
+#form{
+    height: 600px;
+}
+
+#formintro{
+    height: 20px;
+}
