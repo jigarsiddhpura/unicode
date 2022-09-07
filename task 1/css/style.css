@@ -1,0 +1,398 @@
+:root{
+    --vdblue: #0B698B;
+    --dblue: #0396A6;
+    --liblue: #9CD3D8;
+    --vliblue: #f2f2f2;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: white;
+}
+
+html{
+    background-color: var(--vdblue);
+}
+
+body p,span{
+    line-height: 150%;
+}
+
+/* navigation bar */
+
+nav{
+    height: 78px;
+    width: 100vw;
+    background-color: var(--dblue);
+    display: flex;
+    align-items: center;
+    padding-left: 72px;
+    padding-right: 72px;
+    
+}
+nav ul{
+    list-style: none;
+    position: absolute;
+    right: 186px;
+    display: flex;
+    font-family: Sen, sans-serif
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 30px 24px;
+    color: var(--vliblue)
+}
+
+nav ul li a:hover{
+    color: var(--vdblue);
+}
+
+nav span{
+    color: var(--vliblue);
+    font-size: 1.8rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* home page */
+
+.home{
+    height: 600px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 60% 50%;
+}
+
+
+
+.hoitems{
+    /* background-color: bisque; */
+    font-family: Sen, sans-serif
+}
+
+.hoitems:nth-child(1){
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 1;
+}
+
+#name{
+    font-size: 4vw; /* 4rem */
+    padding: 20px 0px 0px 44px;
+    background-color: var(--dblue);
+    color: var(--vliblue);
+    /* border: 2px solid wheat; */
+    opacity: 0.7; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    line-height: 100%;
+
+}
+
+#intro{
+    font-size: 1.4vw;  /* 1.3rem */
+    padding: 1px 140px 0px 44px;
+    background-color: var(--dblue);
+    color: var(--vliblue);
+    line-height: 100%;
+    /* border: 2px solid wheat; */
+    opacity: 0.7; 
+}
+
+#name p, #intro span{
+    position: relative; 
+    z-index: 1;
+    margin-top: 10px;
+    /* line-height: 150%; */
+}
+
+#profile img{
+    display: inline-block;
+    width: 40%; /* 577px */
+    height: 80%;
+    /* border: 2px solid black; */
+    box-shadow: 5px 5px 5px black;
+    position: absolute;
+    left:9%;
+    z-index: 0;
+    
+}
+
+#profile{
+    background-color: var(--vdblue);
+    padding: 20px 0pc 0px 26px;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid wheat; */
+    z-index: -1;
+
+}
+
+/* SKILL SECTION */
+
+
+.skillset{
+    display: grid;
+    grid-template-rows: repeat(2,270px);
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px 24px;
+    position: relative;
+    top: 110px;
+    padding: 35px;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+
+.skill-grid-items{
+    /* border: 2px solid black; */
+    padding-right: 20px;
+}
+
+/* .skill-grid-items:nth-child(1){
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 1;
+
+} */
+
+#python, #html, #css, #ai-ml, #skill-intro{
+    padding: 20px;
+    color: var(--vliblue);
+}
+
+#python, #html, #css, #ai-ml{
+    box-shadow: 1px 2px 8px 1px black;
+}
+
+.skill-grid-items img{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    padding-bottom: 8px;
+}
+
+.skill-grid-items p{
+    font-family: 'Josefin Sans', sans-serif;
+    /* font-size: 4rem; */
+    padding-bottom: 5px;
+    
+}
+
+.skill-grid-items span{
+    font-family: Sen, sans-serif;
+    /* font-size: 1.1rem; */
+    font-size: 1.3vw;
+    color: var(--liblue);
+    margin-bottom: 5px;
+    /* line-height: 150%; */
+} 
+
+#skill-intro p{
+    /* font-family: 'Josefin Sans', sans-serif; */
+    font-size: 3.5rem;
+    padding-bottom: 20px;
+    /* line-height: 150%; */
+}
+
+#skill-intro span{
+    font-family: Sen, sans-serif;
+    font-size: 1.4rem;
+    color: var(--liblue);
+}
+
+/* PROJECT SECTION */
+
+.myprogs{
+    position: relative;
+    top: 110px;
+    padding: 69px;
+    margin-top: 20px;
+    display: grid;
+    grid-gap:25px 35px;
+    grid-template-areas: 
+    'progintro progred'
+    'progfood progred'
+    'progfood proggym'
+    'progmore proggym';
+}
+
+#progintro{
+    grid-area: progintro;
+}
+#progred{
+    grid-area: progred;
+}
+#progfood{
+    grid-area: progfood;
+}
+#proggym{
+    grid-area: proggym;
+}
+#progmore{
+    grid-area: progmore;
+}
+
+#progintro{
+    padding: 25px 25px;
+}
+
+.myprogs img{
+    display: inline-block;
+    width: 100%;
+    height: 60%;
+}
+
+#progred, #progfood, #proggym{
+    height: 600px;
+    background-color: var(--dblue);
+    
+}
+
+#proggym:hover{
+    box-shadow: white 3px 2px 13px 1px;
+    
+}
+
+#progred:hover{
+    box-shadow: black 3px 2px 13px 1px;
+    
+}
+
+#progfood:hover{
+    box-shadow: black 3px 2px 13px 1px;
+    
+}
+
+#progred p, #progfood p, #proggym p{
+    /* line-height: 150%; */
+    display: inline-block;
+    padding: 4px 30px 10px 30px;
+    font-size: 1.5vw;
+}
+
+#progred h1, #progfood h1, #proggym h1{
+    position: relative;
+    left: 5%;
+    font-size: 2vw;
+}
+
+#progmore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    position: relative;
+    bottom: 22%;
+    font-family: 'Josefin Sans';
+}
+
+#progmore .btn{
+    padding: 20px;
+    border: 2px solid var(--liblue);
+    background-color: var(--vdblue);
+    font-size: 1.5rem;
+
+}
+
+#progmore .btn:hover{
+    background-color: #47d9e7;
+    
+}
+
+#progmore a{
+    text-decoration: none;
+}
+
+/* contact page */
+
+.contact{
+    /* height: 600px; */
+    display: grid;
+    width: 100%;
+    position: relative;
+    top: 100px;
+    padding: 10px 100px;
+    /* margin-top: 20px; */
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 60%;
+    background-color: var(--dblue);
+}
+
+.contactitems{
+    padding: 30px 50px;
+}
+
+#formintro{
+    height: 200px;
+}
+
+form{
+    z-index: 1000 !important;
+}
+
+#form{
+    height: 640px;
+}
+
+#form p{
+    font-size: 1.3rem;
+    line-height: 170%;
+    font-family: Sen, sans-serif;
+}
+
+#form input,textarea{
+    width: 80%;
+    height: 90%;
+    padding:6px;
+    margin-bottom: 1rem;
+    color: black;
+    border-radius: 5px;
+}
+
+input[type='button']{
+    background-color: #8edfd7;
+    color: white;
+    padding: 10px ;
+    font-size: 1.4rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.btn{
+    height:4rem;
+    margin-bottom: 5px;
+}
+
+#incorrmail ,#incorrnum{
+    color: red;
+    position: relative;
+    top: -20px;
+}
+
+
+
+
+/* utility classes */
+
+.sen{
+    font-family: Sen, sans-serif;
+    font-size: 1.2rem;
+    color: var(--liblue);
+    padding-bottom: 20px;
+}
+
+.josefin{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+    color: var(--vliblue);
+}
+
+
+
+
+
+
+

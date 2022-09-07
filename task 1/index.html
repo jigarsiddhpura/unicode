@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:800px)" href="css/phone.css">
+    <script src="logic.js"></script>
+    <title>Portfolio | Jigar </title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <span>Jigar.S</span>
+        <ul>
+            <li><a href="#skillset">Skills</a></li>
+            <li><a href="#myprogs">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="home">
+        <div id="profile" class="hoitems">
+            <img src="images/profile-pic.png" alt="profile-pic">
+        </div>
+        <div id="name" class="hoitems">
+            <p>I'm Jigar Siddhpura</p>
+            <p>A Frontend Developer.</p>
+        </div>
+        <div id="intro" class="hoitems">
+            <span>I’m probably the most passionate Developer you will ever get to work with. If you have a great project
+                that needs some amazing skills, I’m your guy.</span>
+        </div>
+        <div class="hoitems">
+        </div>
+    </div>
+
+    <div class="skillset" id="skillset">
+        <div class="skill-grid-items" id="skill-intro">
+            <p>Skillset</p>
+            <span>With skills in programming ,designing & development , I am the perfect person when it comes to a full fledged project. Whatever your needs are, I can pretty much take on any challenge.</span>
+        </div>
+        <div class="skill-grid-items" id="html">
+            <img src="images/html5-logo.png" alt="" srcset="">
+            <p><h1> HTML5</h1></p>
+            <span>I have extensive HTML skills and have used them to create several projects. I am very familiar with tables, lists, forms, etc.</span>
+        </div>
+        <div class="skill-grid-items" id="css">
+            <img src="images/css3-logo.png" alt="" srcset="">
+            <p><h1> CSS3</h1></p>
+            <span>As a designer, it's important to have great CSS skills. I have used it for designing several projects and I am confident with using grids, flexbox, media-queries, and animations.</span>
+        </div>
+        <div class="skill-grid-items"></div>
+        <div class="skill-grid-items" id="python">
+            <img src="images/python-logo3.png" alt="python" srcset="">
+            <p><h1> Python</h1></p>
+            <span>I have extensive experience with Python and have used it to create projects such as a Jarvis AI, a Tic Tac Toe game, as well as health and library management systems.</span>
+        </div>
+        <div class="skill-grid-items" id="ai-ml">
+            <img src="images/ai-ml.jpeg" alt="" srcset="">
+            <p><h1> AI-ML</h1></p>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ratione, facere voluptate nesciunt asperiores non similique sint esse. Labore, voluptate.</span>
+        </div>
+        
+    </div>
+
+    <div class="myprogs" id="myprogs">
+        <div class="progitems" id="progintro">
+            <div class="sen"><p>
+                My Projects
+            </p></div>
+            <div class="josefin"><span>
+                Work that I've done for past 8 months.
+            </span></div>
+        </div>
+        <div class="progitems" id="progred">
+            <img src="images/red-sq.png" alt="RED-SQUARE AGENCY">
+            <p><h1>Red Square Agency</h1></p>
+            <p class="sen">It deals in ideas, design and media that are category defying. It believes in rigorous development of brand strategy and whip-smart execution.</p>
+        </div>
+        <div class="progitems" id="progfood">
+            <img src="images/food-delivery.png" alt="FOOD DELIERY WEBSITE">
+            <p><h1>Food Delivery Website</h1></p>
+            <p class="sen">It is a website made during my learning period of web development . It is made purely with HTML5 & CSS3 . </p>
+        </div>
+        <div class="progitems" id="proggym">
+            <img src="images/gym.png" alt="GYM WEBSITE">
+            <p><h1>Gym contact form</h1></p>
+            <p class="sen">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem, adipisci laborum iusto quibusdam asperiores totam quos aperiam quas accusamus aliquam.</p>
+        </div>
+        <div class="progitems josefin" id="progmore">
+            <button class="btn"><a href="https://github.com/jigarsiddhpura" target="_blank">VIEW ALL PROJECTS</a></button>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="contactitems" id="formintro">
+            <p class="josefin">Let's talk </p>
+            <span class="sen">Now that you know a lot about me, let me know if you are interested to work with me.</span>
+        </div>
+        <div class="contactitems" id="form">
+            <form action="" >
+                <div>
+                    <label for="Name"><p>Name</p> </label>
+                    <input type="text" name="Name" id="Name">
+                </div>
+                <div>
+                    <label for="mail"><p>Email Address</p></label>
+                    <input type="text" name="mail" id="mail">
+                    <p id="incorrmail"></p>
+                </div>
+                <div>
+                    <label for="phone"><p>Contact Number</p></label>
+                    <input type="text" name="phone" id="phone">
+                    <p id="incorrnum"></p>
+                </div>
+                <div>
+                    <label for="msg"><p>Message</p></label>
+                    <textarea name="msg" id="msg" cols="50" rows="10"></textarea>
+                </div>
+                <div class="btn">
+                    <input type="button" onclick="check()" value="LET'S GET STARTED">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
+
